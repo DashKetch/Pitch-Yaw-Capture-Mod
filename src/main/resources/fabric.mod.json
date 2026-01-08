@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "pycap",
+  "version": "${version}",
+  "name": "Pitch Yaw Capture Mod",
+  "description": "A mod that uses OpenAL to overide Minecraft's background music with your own",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pycap/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dashketch.mods.pycap.client.PycapClient"
+    ],
+    "main": [
+      "dashketch.mods.pycap.Pycap"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
