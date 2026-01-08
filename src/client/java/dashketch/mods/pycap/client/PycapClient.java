@@ -1,6 +1,5 @@
 package dashketch.mods.pycap.client;
 
-import dashketch.mods.pycap.Pycap;
 import dashketch.mods.pycap.PycapConfig;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -12,7 +11,9 @@ import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class PycapClient implements ClientModInitializer {
-    public static final KeyBinding.Category PYCAP_CATEGORY = new KeyBinding.Category(Identifier.of("pycap", "snapper"));
+    public static final KeyBinding.Category PYCAP_CATEGORY = new KeyBinding.Category(
+            Identifier.of("pycap", "snapper")
+    );
 
     // Create an instance of your config
     public static PycapConfig config = PycapConfig.load();
